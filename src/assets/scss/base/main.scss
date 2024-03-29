@@ -74,6 +74,7 @@ label {
 }
 
 .hidden {
+  // если поставить display none то скринридер не будет зачитывать текст из заголовка
   font-size: 0;
   opacity: 0;
   visibility: hidden;
