@@ -8,7 +8,7 @@
   }
 
   @include mobile {
-    min-height: calc(100dvh - 128px);
+    min-height: calc(100dvh - 109px);
   }
 
   &::before {
@@ -74,8 +74,10 @@
     }
   }
 
-  &__left {
-    max-width: 594px;
+  @__left {
+    @include mini-desktop {
+      max-width: 617px;
+    }
   }
 
   &__title {
@@ -108,6 +110,12 @@
 
   &__subtitle {
     margin-bottom: 69px;
+
+    & br {
+      @include mini-desktop {
+        display: none;
+      }
+    }
   }
 
   &__form {
@@ -230,6 +238,7 @@
 
     &-head {
       &-th {
+        white-space: nowrap;
         font-weight: 600;
         font-size: 14px;
         line-height: 143%;
@@ -238,7 +247,7 @@
     }
 
     &-body {
-      &-th {
+      &-td {
         font-weight: 700;
         font-size: 20px;
         line-height: 130%;
