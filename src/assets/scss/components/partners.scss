@@ -41,7 +41,7 @@
     flex-wrap: wrap;
 
     @include mobile {
-      gap: 10px;
+      display: none;
     }
   }
 
@@ -51,5 +51,14 @@
     width: 160px;
     height: 90px;
     background-color: #fff;
+  }
+
+  &__slider {
+    display: none;
+
+    @include mobile {
+      display: block;
+      overflow: hidden;
+    }
   }
 }
