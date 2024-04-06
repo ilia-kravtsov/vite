@@ -11,11 +11,11 @@ export const useInsightSlider = () => {
     loop: true,
     centeredSlides: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.insight__pagination',
       clickable: true,
     },
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.insight__scrollbar',
       hide: false,
       dragSize: 180,
     },
