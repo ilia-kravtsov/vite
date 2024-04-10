@@ -1,7 +1,7 @@
 // import '../assets/scss/main.scss';
 // import '../assets/scss/contact.scss';
-import '/scss/contact.scss';
 import '/scss/main.scss';
+import '/scss/contact.scss';
 
 // components
 import { useTheme } from './components/theme';
