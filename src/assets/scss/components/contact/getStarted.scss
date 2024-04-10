@@ -98,6 +98,11 @@
         font-weight: 500;
         line-height: 143%;
         color: #1d1e25;
+        transition: color 0.3s ease-in-out;
+
+        &--error {
+          color: #fb4619;
+        }
       }
     }
 
@@ -110,6 +115,7 @@
       font-weight: 400;
       line-height: 171%;
       color: #1d1e25;
+      transition: border 0.3s ease-in-out;
 
       &--small {
         width: 240px;
@@ -123,6 +129,10 @@
         outline: none;
         height: 134px;
         resize: none;
+      }
+
+      &--error {
+        border: 1px solid #fb4619;
       }
     }
 
