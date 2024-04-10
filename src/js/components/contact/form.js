@@ -1,5 +1,6 @@
 import Toastify from 'toastify-js';
 import 'toastify-js/src/toastify.css';
+// import Inputmask from 'inputmask';
 
 const form = document.getElementById('get-started__form');
 
@@ -135,3 +136,7 @@ function simplifier(error, fieldName, fieldNameText) {
     fieldNameText.classList.remove('get-started__form-label-text--error');
   }, 3000);
 }
+
+// phone mask
+// const phoneInput = document.getElementById('phone');
+// Inputmask({ mask: '8(999)-999-99-9' }).mask(phoneInput);
