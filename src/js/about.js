@@ -1,13 +1,13 @@
 import '/scss/main.scss';
-import '/scss/pricing.scss';
+import '/scss/about.scss';
 
 // components
 import { useTheme } from './components/theme';
 import { useBurger } from './components/burger';
+import { useCircularText } from './components/about/circular-text';
 import { useFooterAccordeon } from './components/footer-accordeon';
-import { usePriceSwitcher } from './components/pricing/priceSwitcher';
 
 useTheme();
 useBurger();
+useCircularText();
 useFooterAccordeon();
-usePriceSwitcher();

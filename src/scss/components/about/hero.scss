@@ -1,0 +1,79 @@
+.about-hero {
+  &__title {
+    max-width: 959px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+  }
+
+  &__text-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 118px;
+    gap: 174px;
+  }
+
+  &__text {
+    max-width: 790px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 131%;
+    letter-spacing: -0.03em;
+    color: var(--neutral-color-100);
+
+    &::before {
+      transform: translateY(-85px);
+      width: 350px;
+    }
+  }
+
+  &__get-in-touch {
+    position: relative;
+    height: 127px;
+    width: 127px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: var(--neutral-color-100);
+    cursor: pointer;
+
+    & svg {
+      transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover svg {
+      transition: transform 0.5s ease-in-out;
+      transform: rotate(180deg);
+    }
+
+    &-text {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 50%;
+      animation: effect 10s linear infinite;
+
+      @keyframes effect {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      span {
+        position: absolute;
+        left: 50%;
+        transform-origin: 0 64px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
