@@ -1,0 +1,259 @@
+.about-team {
+  &-ideas {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    border-top: 1px solid var(--neutral-color-30);
+    border-bottom: 1px solid var(--neutral-color-30);
+    padding: 85.5px 0;
+
+    @include tablet {
+      font-size: 32px;
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: stretch;
+      padding: 60px 0;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__title {
+      max-width: 480px;
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+
+      @include mini-desktop {
+        font-size: 48px;
+      }
+
+      @include tablet {
+        font-size: 32px;
+        max-width: 380px;
+      }
+
+      @include small-tablet {
+        font-size: 46px;
+        max-width: 480px;
+        text-align: center;
+      }
+
+      @include mobile {
+      }
+
+      @include small-mobile {
+      }
+    }
+
+    &__text {
+      max-width: 522px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      color: var(--neutral-color-100);
+
+      @include mini-desktop {
+        font-size: 18px;
+        max-width: 400px;
+      }
+
+      @include tablet {
+        font-size: 16px;
+      }
+
+      @include small-tablet {
+        max-width: 522px;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &-section {
+    padding: 160px 0 165px 0;
+
+    @include mini-desktop {
+      padding: 80px 0 85px 0;
+    }
+
+    &__title {
+      max-width: 903px;
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+
+      @include mini-desktop {
+        font-size: 46px;
+      }
+
+      @include tablet {
+        font-size: 36px;
+      }
+
+      @include small-tablet {
+        font-size: 46px;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      max-width: 534px;
+      margin-top: 24px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 178%;
+      color: var(--neutral-color-150);
+
+      @include small-tablet {
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+
+    &__swiper {
+      margin-top: 80px;
+
+      @include small-tablet {
+        margin-top: 40px;
+      }
+
+      &-wrapper {
+        margin-bottom: 80px;
+        position: relative;
+
+        .nav-imitation {
+          @include nav-imitation(155px, 343px);
+        }
+
+        @include mini-desktop {
+          .nav-imitation {
+            display: none;
+          }
+        }
+      }
+
+      &-slide {
+        &-descr-container {
+          margin-top: 16px;
+          max-width: 379px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 8px 84px;
+
+          @include mini-desktop {
+            gap: 8px 0;
+          }
+        }
+
+        &-name {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 150%;
+          color: var(--neutral-color-100);
+        }
+
+        &-social-list {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        &-list-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background: #161a341a;
+        }
+
+        &-position {
+          display: block;
+        }
+      }
+
+      &-pagination {
+        margin-bottom: 20px;
+      }
+
+      &-scrollbar {
+        @include scrollbar-paint;
+      }
+    }
+
+    &__join {
+      padding-top: 105px;
+      display: flex;
+      justify-content: space-between;
+      gap: 71px;
+
+      @include small-tablet {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      @include mobile {
+        padding-top: 60px;
+        gap: 40px;
+      }
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      &-title {
+        max-width: 626px;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        color: var(--neutral-color-100);
+
+        @include tablet {
+          font-size: 46px;
+          max-width: 500px;
+        }
+
+        @include mobile {
+          font-size: 32px;
+        }
+      }
+
+      &-text {
+        max-width: 506px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 178%;
+        color: var(--neutral-color-150);
+      }
+
+      &-link {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--neutral-color-100);
+      }
+    }
+  }
+}

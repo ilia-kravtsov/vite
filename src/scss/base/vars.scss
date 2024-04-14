@@ -71,6 +71,7 @@
 [data-theme='dark'] {
   // neutral colors
   --neutral-color-10: #1d1e25;
+  --neutral-color-20: #1d1e25;
   --neutral-color-100: #fff;
   --neutral-color-140: #fff;
   --neutral-color-150: #fff;
@@ -87,4 +88,8 @@
 
   // overview colors
   --black-bg-color: #18181d;
+
+  // pagination
+  --swiper-pagination-color: var(--neutral-color-140);
+  --swiper-pagination-bullet-inactive-color: var(--neutral-color-120);
 }

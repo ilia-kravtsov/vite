@@ -2,12 +2,10 @@ import '/scss/main.scss';
 import '/scss/about.scss';
 
 // components
-import { useTheme } from './components/theme';
-import { useBurger } from './components/burger';
 import { useCircularText } from './components/about/circular-text';
-import { useFooterAccordeon } from './components/footer-accordeon';
+import { useAboutHeroSwiper } from './components/about/about-hero-swiper';
+import { useAboutTeamSwiper } from './components/about/about-team-swiper';
 
-useTheme();
-useBurger();
 useCircularText();
-useFooterAccordeon();
+useAboutHeroSwiper();
+useAboutTeamSwiper();

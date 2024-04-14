@@ -107,6 +107,7 @@
 
   &__info {
     @include flex-justify-between;
+    margin-bottom: 160px;
 
     @include tablet {
       gap: 20px;
