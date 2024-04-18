@@ -1,0 +1,120 @@
+.activity-updates {
+  padding-top: 95px;
+  padding-bottom: 160px;
+
+  &__hero {
+    padding-bottom: 128px;
+
+    &::before {
+      top: -188px;
+      left: -20px;
+    }
+
+    &::after {
+      bottom: -200px;
+      right: -50px;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+    }
+
+    &-text {
+      margin-top: 53px;
+      max-width: 674px;
+  
+      &::before {
+        transform: translateY(-62px);
+        width: 230px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      gap: 44px;
+      margin-top: 138px;
+      
+      &-item {
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--neutral-color-150);
+        cursor: pointer;
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: -5px;
+          left: 0;
+          height: 2px;
+          background-color: var(--neutral-color-100);
+          opacity: 0;
+          visibility: hidden;
+          transition:
+            opacity var(--transition),
+            visibility var(--transition);
+        }
+    
+        &:hover {
+          color: var(--neutral-color-100);
+          &::after {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    &-swiper {
+      margin-top: 90px;
+      &-wrapper{
+        margin-bottom: 80px;
+      }
+      &-slide {
+        display: flex;
+        flex-direction: column;
+        max-width: 515px;
+
+        &-img {
+        }
+        &-date {
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+          margin-top: 16px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          color: var(--neutral-color-150);
+        }
+        &-title {
+          margin-top: 24px;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 125%;
+          letter-spacing: -0.03em;
+          color: var(--neutral-color-100);
+        }
+        &-text {
+          margin-top: 16px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 150%;
+          color: var(--neutral-color-150);
+        }
+      }
+      &-pagination{
+        margin-bottom: 20px;
+      }
+      &-scrollbar {
+
+      }
+    }
+  }
+}

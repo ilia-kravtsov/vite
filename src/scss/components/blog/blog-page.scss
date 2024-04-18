@@ -3,6 +3,11 @@
     max-width: 940px;
     padding-top: 80px;
     padding-bottom: 160px;
+
+    @include mobile {
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
   }
 
   &__title {
@@ -13,6 +18,19 @@
     line-height: 120%;
     letter-spacing: -0.04em;
     color: var(--neutral-color-100);
+
+    @include small-tablet {
+      font-size: 56px;
+    }
+
+    @include mobile {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    @include small-mobile {
+      text-align: left;
+    }
   }
 
   &__message-header {
@@ -20,6 +38,16 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
+
+    @include small-tablet {
+      gap: 30px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__message-person-data {
@@ -73,6 +101,14 @@
     font-size: 18px;
     line-height: 178%;
     color: var(--neutral-color-100);
+
+    @include small-tablet {
+      margin-top: 40px;
+    }
+
+    @include mobile {
+      margin-top: 20px;
+    }
   }
 
   &__subtitle {
@@ -81,6 +117,10 @@
     font-size: 40px;
     line-height: 120%;
     color: var(--neutral-color-100);
+    
+    @include mobile {
+      margin-top: 20px;
+    }
   }
 
   &__subtext {
@@ -95,6 +135,12 @@
     display: flex;
     gap: 48px; 
     margin-top: 56px;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__post-img {
@@ -129,6 +175,10 @@
       font-size: 16px;
       line-height: 162%;
       color: var(--neutral-color-100);
+
+      @media (max-width: 411px) {
+        margin-top: 20px;
+      }
     }
     &-author-pointer {
       margin-top: 14px;
