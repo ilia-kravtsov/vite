@@ -89,10 +89,10 @@ label {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--neutral-color-100);
+  background-color: var(--neutral-color-40);
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--neutral-color-100) #fff;
+  scrollbar-color: var(--neutral-color-100) var(--neutral-color-40);
 }

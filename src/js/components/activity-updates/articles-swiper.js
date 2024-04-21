@@ -1,20 +1,23 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-export const useActivityHeroSwiper = () => {
-  new Swiper('.activity-updates__hero-swiper', {
+export const useArticlesSwiper = () => {
+  new Swiper('.articles__swiper', {
     modules: [Navigation],
     direction: 'horizontal',
-    slidesPerView: 2.5,
+    slidesPerView: 2.9,
     spaceBetween: 32,
     loop: true,
     pagination: {
-      el: '.activity-updates__hero-swiper-pagination',
+      el: '.articles__swiper-pagination',
     },
     scrollbar: {
-      el: '.activity-updates__hero-swiper-scrollbar',
+      el: '.articles__swiper-scrollbar',
     },
-
+    navigation: {
+      prevEl: '.articles__swiper-button--prev',
+      nextEl: '.articles__swiper-button--next',
+    },
     breakpoints: {
       993: {
         slidesPerView: 2.5,
