@@ -89,7 +89,7 @@
       max-width: 292px;
       font-weight: 500;
       line-height: 162%;
-      color: var(--neutral-color-150);
+      color: #7e8492;
 
       @include tablet {
         max-width: 500px;
@@ -183,7 +183,7 @@
       position: relative;
       font-weight: 400;
       line-height: 150%;
-      color: var(--neutral-color-150);
+      color: #7e8492;
 
       &::after {
         content: '';

@@ -174,7 +174,7 @@
       margin-bottom: 24px;
       font-weight: 500;
       line-height: 162%;
-      color: var(--neutral-color-150);
+      color: #7e8492;
     }
 
     &-price {
@@ -190,7 +190,7 @@
       &-text {
         font-weight: 500;
         line-height: 162%;
-        color: var(--neutral-color-150);
+        color: #7e8492;
       }
     }
 
@@ -234,7 +234,7 @@
 
       &--inaccess {
         text-decoration: line-through;
-        color: var(--neutral-color-150);
+        color: #7e8492;
 
         &::before {
           background: url('../assets/icons/pricing-tick-inaccess-icon.svg');

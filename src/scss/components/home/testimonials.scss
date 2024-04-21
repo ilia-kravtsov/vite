@@ -36,7 +36,7 @@
     max-width: 376px;
     font-weight: 500;
     line-height: 178%;
-    color: var(--neutral-color-150);
+    color: #7e8492;
 
     @include tablet {
       max-width: 450px;
@@ -106,7 +106,7 @@
       &-professions {
         font-weight: 500;
         line-height: 162%;
-        color: var(--neutral-color-150);
+        color: #7e8492;
       }
     }
   }
@@ -118,7 +118,7 @@
     transform: translateY(-40px);
 
     @include mini-desktop {
-      transform: translateY(5px);
+      transform: translateY(30px);
     }
   }
 
