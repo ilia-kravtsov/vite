@@ -16,7 +16,7 @@ export const useActivityHeroSwiper = () => {
     },
 
     breakpoints: {
-      993: {
+      1300: {
         slidesPerView: 2.5,
       },
       767: {
